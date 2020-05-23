@@ -9,7 +9,19 @@ class UI {
     printCryptoCurrencies() {
         cryptoAPI.getCryptoCurrencyList()
         .then(data => {
-            console.log(data);
+            const cryptoCurrencies = data.cryptoCurrencies;
+
+            // Build the <select> feature from the REST API
+            const select = document.getElementById('cryptocurrency');
+
+            cryptoCurrencies.forEach(currency => {
+                // add the options
+                const option = document.createElement('option');
+                option.value = currency.id;
+                option.appendChild(document.createTextNode(currency.name));
+                select.appendChild(option);
+            })
+
         }) 
     }
 }
