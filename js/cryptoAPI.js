@@ -13,3 +13,10 @@ class CryptoAPI {
         }
     }
 }
+
+
+// https://api.nomics.com/v1/currencies/ticker?key=12803269db21e2f525533c96c5b79ba4&ids=BTC,ETH,XRP&interval=1d,30d&convert=EUR
+
+// https://api.nomics.com/v1/currencies/ticker?key=12803269db21e2f525533c96c5b79ba4&ids=BTC,ETH,XRP&interval=1d,30d&convert=USD
+
+// https://api.nomics.com/v1/currencies/ticker?key=12803269db21e2f525533c96c5b79ba4&ids=BTC,ETH,XRP&interval=1d,30d&convert=GBP
