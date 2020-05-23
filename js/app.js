@@ -1,6 +1,6 @@
 // Instantiate the classses
 
-const cryptoAPI = new cryptoAPI();
+const cryptoAPI = new CryptoAPI();
 const ui = new UI();
 
 
