@@ -24,4 +24,25 @@ class UI {
 
         }) 
     }
+
+    // Print a message 2 parameters, message and classes
+    printMessage(message, className) {
+        const div = document.createElement('div');
+
+        div.className = className;
+        // Add the message
+        div.appendChild(document.createTextNode(message));
+
+        const messagesDiv = document.querySelector('.messages');
+
+        messagesDiv.appendChild(div);
+
+        setTimeout(() => {
+            document.querySelector('.messages div').remove();
+        }, 3000)
+    }
+
+    displayResult(result) {
+        console.log(result);
+    }
 }
