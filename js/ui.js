@@ -43,6 +43,21 @@ class UI {
     }
 
     displayResult(result) {
-        console.log(result);
+        
+        let HTMLTemplate = '';
+        // const cPrice = (result.price).toFixed(2);
+
+        // console.log(cPrice);
+        HTMLTemplate += `
+            <div class="card cyan darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title">Result</span>
+                    <p>The Price of ${result.name} from ${currency.value} is ${result.price}</p>
+                </div>
+            </div>
+        `;
+        console.log(result.price);
+        const divResult = document.querySelector('#result');
+        divResult.innerHTML = HTMLTemplate;
     }
 }
